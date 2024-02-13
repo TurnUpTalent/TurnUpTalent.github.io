@@ -1,41 +1,58 @@
-[{
-  "name":["Horizon UI PRO",false],
-  "employee_id": 127384,
-  "department": "Hardware" ,
-  "score": 2458,
-  "date": "12 Jan 2021",
-  "progress": 17.5  
-},
-{
-  "name":["Horizon UI Free",true],
-  "employee_id": 987165 ,
-  "department": "Hardware" ,
-  "score": 1485,
-  "date": "21 Feb 2021",
-  "progress": 10.8  
-},
-{
-  "name":["Weekly Update",true],
-  "employee_id": 4567899,
-  "department": "Hardware" ,
-  "score": 1024,
-  "date": "13 Mar 2021",
-  "progress": 21.3  
-},
-{
-  "name":["Venus 3D Asset",true],
-  "employee_id": 2345678,
-  "department":  "Hardware",
-  "score": 858,
-  "date": "24 Jan 2021",
-  "progress": 31.5  
-},
-{
-  "name":["Marketplace",false],
-  "employee_id": 345654,
-  "department":  "Hardware",
-  "score": 258,
-  "date": "24 Oct 2022",
-  "progress": 12.2  
-}
+[
+  {
+    "id": 1,
+    "name": "Ann Culhane",
+    "department": "Marketing",
+    "score": 58,
+    "register_date": "8/JAN/2024",
+    "email": "ann.culhane@company.com"
+  },
+  {
+    "id": 2,
+    "name": "Ahmad Rosser",
+    "department": "HR",
+    "score": 37,
+    "register_date": "9/JAN/2024",
+    "email": "ahmad.rosser@company.com"
+  },
+  {
+    "id": 3,
+    "name": "Zain Calzoni",
+    "department": "Sales",
+    "score": 39,
+    "register_date": "12/JAN/2024",
+    "email": "zain.calzoni@company.com"
+  },
+  {
+    "id": 4,
+    "name": "Leo Stanton",
+    "department": "IT",
+    "score": 54,
+    "register_date": "13/JAN/2024",
+    "email": "leo.stanton@company.com"
+  },
+  {
+    "id": 5,
+    "name": "Kaiya Vetrovs",
+    "department": "Finance",
+    "score": 77,
+    "register_date": "14/JAN/2024",
+    "email": "kaiya.vetrovs@company.com"
+  },
+  {
+    "id": 6,
+    "name": "Ryan Westervelt",
+    "department": "Accountant",
+    "score": 39,
+    "register_date": "14/JAN/2024",
+    "email": "ryan.westervelt@company.com"
+  },
+  {
+    "id": 7,
+    "name": "Corey Stanton",
+    "department": "Accountant",
+    "score": 74,
+    "register_date": "15/JAN/2024",
+    "email": "corey.stanton@company.com"
+  }
 ]

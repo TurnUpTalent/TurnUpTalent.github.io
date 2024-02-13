@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 import {
   Flex,
   Table,
@@ -17,41 +17,30 @@ import Card from "components/card/Card";
 export default function CheckTable(props) {
   const { columnsData, tableData } = props;
 
-  // Setup columns with custom sorting for the "Name" column
   const columns = useMemo(
     () => [
       {
-        Header: "NAME",
+        Header: "Name",
         accessor: "name",
-        // Custom sort method for "Name" column
-        sortType: (rowA, rowB) => {
-          const nameA = rowA.values.name[0];
-          const nameB = rowB.values.name[0];
-          return nameA.localeCompare(nameB);
-        },
-        Cell: ({ value }) => value[0], // Display the first element of the name array
+        Cell: ({ value }) => value, // Assuming name is now a string
       },
       {
-        Header: "EMPLOYEE ID",
-        accessor: "employee_id",
+        Header: "Email",
+        accessor: "email",
       },
       {
-        Header: "DEPARTMENT",
+        Header: "Department",
         accessor: "department",
       },
       {
-        Header: "PROGRESS",
-        accessor: "progress",
-      },
-      {
-        Header: "SCORE",
+        Header: "Score",
         accessor: "score",
+        Cell: ({ value }) => value + '%', // Assuming score is a number
       },
       {
-        Header: "REGISTER DATE",
-        accessor: "date",
+        Header: "Register Date",
+        accessor: "register_date",
       },
-      // Add other columns as needed
     ],
     []
   );
