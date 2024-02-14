@@ -18,7 +18,13 @@ import {
 import { MdBarChart } from "react-icons/md";
 
 export default function BarGraph(props) {
-  const { title, ...rest } = props;
+  const { title, chartData, chartOptions, ...rest } = props;
+
+  let mybarChartDataConsumption = JSON.parse(JSON.stringify(barChartDataConsumption));
+  let mybarChartOptionsConsumption = JSON.parse(JSON.stringify(barChartOptionsConsumption));
+
+  mybarChartDataConsumption[0].data = chartData ? chartData : [0, 0, 0, 0, 0, 0, 0];
+  mybarChartOptionsConsumption.xaxis.categories = chartOptions ? chartOptions : ["Default", "Default", "Default", "Default", "Default", "Default", "Default"];
 
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
@@ -61,8 +67,8 @@ export default function BarGraph(props) {
 
       <Box h='240px' mt='auto'>
         <BarChart
-          chartData={barChartDataConsumption}
-          chartOptions={barChartOptionsConsumption}
+            chartData={mybarChartDataConsumption}
+            chartOptions={mybarChartOptionsConsumption}
         />
       </Box>
     </Card>

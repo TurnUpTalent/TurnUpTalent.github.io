@@ -11,18 +11,23 @@ import banner from "assets/img/auth/banner.png";
 import {lineChartDataTotalSpent, lineChartOptionsTotalSpent} from "../../../variables/charts";
 import LineChart from "./components/LineChart";
 
+function isString(variable) {
+    return typeof variable === "string";
+}
 export default function Profile(props) {
-    let id = 1;
-    if (typeof props.match.params.id === 'string' || props.match.params.id instanceof String)
-    { id = 1;}
-    else
-    {id = props.match.params.id-1;}
+
+    let id = isString(props.match.params.id) ? props.match.params.id-1 : 1;
+    id = isNaN(id) ? 1 : id;
     const name = tableDataCheck[id].name;
-    const job = tableDataCheck[id].name;
+    const job = tableDataCheck[id].job;
     const department = tableDataCheck[id].department;
     const score = tableDataCheck[id].score;
     const xaxis = tableDataCheck[id].xaxis;
     const series = tableDataCheck[id].series;
+    const chartDataPos = tableDataCheck[id].chartDataPos;
+    const chartOptionsPos = tableDataCheck[id].chartOptionsPos;
+    const chartDataNeg = tableDataCheck[id].chartDataNeg;
+    const chartOptionsNeg = tableDataCheck[id].chartOptionsNeg;
 
     const images = require.context('assets/img/avatars', true);
 
@@ -61,8 +66,8 @@ export default function Profile(props) {
             </GridItem>
         </Grid>
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' >
-            <BarGraph title={"Top 5 positive factors"} mt='20px'/>
-            <BarGraph title={"Top 5 negative factors"} mt='10px'/>
+            <BarGraph title={"Top 5 positive factors"} chartData={chartDataPos} chartOptions={chartOptionsPos}  mt='20px'/>
+            <BarGraph title={"Top 5 negative factors"} chartData={chartDataNeg} chartOptions={chartOptionsNeg} mt='10px'/>
         </SimpleGrid>
     </Box>
   );

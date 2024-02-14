@@ -8,19 +8,22 @@
     "score": 58,
     "register_date": "8/JAN/2024",
     "xaxis": {
-    "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+    "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
        "name": "projected",
-       "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
      },
        {
          "name": "actual",
-         "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
        }
      ],
-    "email": "ann.culhane@company.com"
-
+    "email": "ann.culhane@company.com",
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 2,
@@ -32,18 +35,23 @@
     "register_date": "9/JAN/2024",
     "email": "ahmad.rosser@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
+
   {
     "id": 3,
     "internal_id": 3,
@@ -54,17 +62,21 @@
     "register_date": "12/JAN/2024",
     "email": "zain.calzoni@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 4,
@@ -76,17 +88,21 @@
     "register_date": "13/JAN/2024",
     "email": "leo.stanton@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 5,
@@ -98,17 +114,21 @@
     "register_date": "14/JAN/2024",
     "email": "kaiya.vetrovs@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 6,
@@ -120,17 +140,21 @@
     "register_date": "14/JAN/2024",
     "email": "ryan.westervelt@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 7,
@@ -142,17 +166,21 @@
     "register_date": "15/JAN/2024",
     "email": "corey.stanton@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 8,
@@ -164,17 +192,21 @@
     "register_date": "1/JAN/2024",
     "email": "mara.jones@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 9,
@@ -186,17 +218,21 @@
     "register_date": "1/JAN/2024",
     "email": "jamal.petersen@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 10,
@@ -208,17 +244,21 @@
     "register_date": "1/JAN/2024",
     "email": "khloe.allen@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 11,
@@ -230,17 +270,21 @@
     "register_date": "1/JAN/2024",
     "email": "teagan.shields@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 12 ,
@@ -252,17 +296,21 @@
     "register_date": "1/JAN/2024",
     "email": "solomon.hunter@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 13,
@@ -274,17 +322,21 @@
     "register_date": "1/JAN/2024",
     "email": "jayleen.davidson@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 14,
@@ -295,17 +347,21 @@
     "register_date": "1/JAN/2024",
     "email": "adan.weber@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 15,
@@ -317,17 +373,21 @@
     "register_date": "1/JAN/2024",
     "email": "bowen.sharp@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 16,
@@ -339,17 +399,21 @@
     "register_date": "1/JAN/2024",
     "email": "ronin.harris@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 17,
@@ -361,17 +425,21 @@
     "register_date": "1/JAN/2024",
     "email": "aiden.mcFarland@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 18,
@@ -383,17 +451,21 @@
     "register_date": "1/JAN/2024",
     "email": "kamari.mccarthy@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 19 ,
@@ -405,17 +477,21 @@
     "register_date": "1/JAN/2024",
     "email": "nelson.golden@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   },
   {
     "id": 20 ,
@@ -427,16 +503,20 @@
     "register_date": "1/JAN/2024",
     "email": "gabriella.gray@company.com",
     "xaxis": {
-      "categories": [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
       "name": "projected",
-      "data": [30, 40, 35, 50, 49, 60, 70, 91, 125]
+      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
         "name": "actual",
-        "data": [35, 45, 40, 55, 54, 65, 75, 96, 130]
+        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
-    ]
+    ],
+    "chartDataPos": [400, 370, 330, 390, 320],
+    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
+    "chartDataNeg": [400, 370, 330, 390, 320],
+    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
   }
 ]

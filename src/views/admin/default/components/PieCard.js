@@ -8,7 +8,7 @@ import { VSeparator } from "components/separator/Separator";
 import React from "react";
 
 export default function Conversion(props) {
-  const { ...rest } = props;
+  const {title,...rest } = props;
 
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
@@ -26,7 +26,7 @@ export default function Conversion(props) {
         w='100%'
         mb='8px'>
         <Text color={textColor} fontSize='md' fontWeight='600' mt='4px'>
-          Your Pie Chart
+          {title ? title : "Conversion"}
         </Text>
         <Select
           fontSize='sm'
@@ -63,7 +63,7 @@ export default function Conversion(props) {
               color='secondaryGray.600'
               fontWeight='700'
               mb='5px'>
-              Your files
+              Low Risk
             </Text>
           </Flex>
           <Text fontSize='lg' color={textColor} fontWeight='700'>
@@ -79,11 +79,27 @@ export default function Conversion(props) {
               color='secondaryGray.600'
               fontWeight='700'
               mb='5px'>
-              System
+                High Risk
             </Text>
           </Flex>
           <Text fontSize='lg' color={textColor} fontWeight='700'>
             25%
+          </Text>
+        </Flex>
+        <VSeparator mx={{ base: "60px", xl: "60px", "2xl": "60px" }} />
+        <Flex direction='column' py='5px' me='10px'>
+          <Flex align='center'>
+            <Box h='8px' w='8px' bg='#EFF4FB' borderRadius='50%' me='4px' />
+            <Text
+                fontSize='xs'
+                color='secondaryGray.600'
+                fontWeight='700'
+                mb='5px'>
+              No Risk
+            </Text>
+          </Flex>
+          <Text fontSize='lg' color={textColor} fontWeight='700'>
+            12%
           </Text>
         </Flex>
       </Card>
