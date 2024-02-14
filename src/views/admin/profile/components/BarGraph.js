@@ -17,8 +17,8 @@ import {
 } from "variables/charts";
 import { MdBarChart } from "react-icons/md";
 
-export default function WeeklyRevenue(props) {
-  const { ...rest } = props;
+export default function BarGraph(props) {
+  const { title, ...rest } = props;
 
   // Chakra Color Mode
   const textColor = useColorModeValue("secondaryGray.900", "white");
@@ -41,7 +41,7 @@ export default function WeeklyRevenue(props) {
           fontSize='xl'
           fontWeight='700'
           lineHeight='100%'>
-          Weekly Revenue
+          {title ? title : "Place Holder title"}
         </Text>
         <Button
           align='center'

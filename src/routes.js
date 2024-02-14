@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Icon } from "@chakra-ui/react";
+import {Icon, Link} from "@chakra-ui/react";
 import {
   MdBarChart,
   MdPerson,
@@ -18,6 +18,7 @@ import RTL from "views/admin/rtl";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
+import {SelectColumnFilter} from "./views/admin/default/components/filters";
 
 const routes = [
   {
@@ -27,21 +28,6 @@ const routes = [
     icon: <Icon as={MdHome} width='20px' height='20px' color='inherit' />,
     component: MainDashboard,
   },
-  // {
-  //   name: "NFT Marketplace",
-  //   layout: "/admin",
-  //   path: "/nft-marketplace",
-  //   icon: (
-  //     <Icon
-  //       as={MdOutlineShoppingCart}
-  //       width='20px'
-  //       height='20px'
-  //       color='inherit'
-  //     />
-  //   ),
-  //   component: NFTMarketplace,
-  //   secondary: true,
-  // },
   {
     name: "Employee Tables",
     layout: "/admin",
@@ -52,7 +38,7 @@ const routes = [
   {
     name: "Profile",
     layout: "/admin",
-    path: "/profile",
+    path: "/profile/:id",
     icon: <Icon as={MdPerson} width='20px' height='20px' color='inherit' />,
     component: Profile,
   },

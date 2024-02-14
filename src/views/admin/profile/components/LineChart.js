@@ -5,28 +5,19 @@ class LineChart extends React.Component {
   constructor(props) {
     super(props);
 
+    const {xaxis, series, ...rest} = props;
     this.state = {
       options: {
         chart: {
           id: 'apexchart-example'
         },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-        }
+        xaxis: xaxis,
       },
-      series: [{
-        name: 'series-1',
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
-      }]
+      series: series,
     }
   }
 
-  // componentDidMount() {
-  //   this.setState({
-  //     series: this.props.,
-  //     chartOptions: this.props.chartOptions,
-  //   });
-  // }
+
 
   render() {
     return (

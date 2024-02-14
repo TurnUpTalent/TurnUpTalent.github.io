@@ -1,51 +1,34 @@
-/*!
-  _   _  ___  ____  ___ ________  _   _   _   _ ___   
- | | | |/ _ \|  _ \|_ _|__  / _ \| \ | | | | | |_ _| 
- | |_| | | | | |_) || |  / / | | |  \| | | | | || | 
- |  _  | |_| |  _ < | | / /| |_| | |\  | | |_| || |
- |_| |_|\___/|_| \_\___/____\___/|_| \_|  \___/|___|
-                                                                                                                                                                                                                                                                                                                                       
-=========================================================
-* Horizon UI - v1.1.0
-=========================================================
 
-* Product Page: https://www.horizon-ui.com/
-* Copyright 2023 Horizon UI (https://www.horizon-ui.com/)
-
-* Designed and Coded by Simmmple
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-// Chakra imports
 import {Box, Grid, SimpleGrid, GridItem} from "@chakra-ui/react";
 
 // Custom components
 import Banner from "views/admin/profile/components/Banner";
-import General from "views/admin/profile/components/General";
-import Notifications from "views/admin/profile/components/Notifications";
-import Projects from "views/admin/profile/components/Projects";
-import Storage from "views/admin/profile/components/Storage";
-import Upload from "views/admin/profile/components/Upload";
-
+import BarGraph from "./components/BarGraph";
+import React from "react";
+import tableDataCheck from "views/admin/default/variables/tableDataCheck.json";
 // Assets
 import banner from "assets/img/auth/banner.png";
-import avatar from "assets/img/avatars/avatar4.png";
-import React from "react";
 import {lineChartDataTotalSpent, lineChartOptionsTotalSpent} from "../../../variables/charts";
 import LineChart from "./components/LineChart";
-import PieCard from "../default/components/PieCard";
-import WeeklyRevenue from "../default/components/WeeklyRevenue";
 
-export default function Overview() {
+export default function Profile(props) {
+    let id = 1;
+    if (typeof props.match.params.id === 'string' || props.match.params.id instanceof String)
+    { id = 1;}
+    else
+    {id = props.match.params.id-1;}
+    const name = tableDataCheck[id].name;
+    const job = tableDataCheck[id].name;
+    const department = tableDataCheck[id].department;
+    const score = tableDataCheck[id].score;
+    const xaxis = tableDataCheck[id].xaxis;
+    const series = tableDataCheck[id].series;
+
+    const images = require.context('assets/img/avatars', true);
+
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
       {/* Main Fields */}
-
-
         <Grid
             h='200px'
             templateRows='repeat(2, 1fr)'
@@ -58,81 +41,29 @@ export default function Overview() {
             <GridItem rowSpan={2} colSpan={1} >
                 <Banner
                     gridArea='1 / 1 / 2 / 2'
+                    id = {id? id : '000000'}
                     banner={banner}
-                    avatar={avatar}
-                    name='Adela Parkson'
-                    job='Product Designer'
-                    posts='17'
-                    followers='9.7k'
-                    following='274'
+                    avatar={images(`./avatar${id}.png`)}
+                    name= {name ? name : 'John Doe'}
+                    job= {job ? job : 'Anonymous Job'}
+                    department={department ? department : 'Anonymous Department'}
+                    score={score ? score : '0'}
                 />
             </GridItem>
             {/*</div>*/}
-            {/*<div style="flex: 80;">*/}
             <GridItem colSpan={4} rowSpan={3}>
                 <LineChart
+                    xaxis = {xaxis}
+                    series = {series}
                     chartData={lineChartDataTotalSpent}
                     chartOptions={lineChartOptionsTotalSpent}
                 />
             </GridItem>
-            {/*</div>*/}
         </Grid>
-        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' mb='20px'>
-            <WeeklyRevenue />
-            <WeeklyRevenue />
+        <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' >
+            <BarGraph title={"Top 5 positive factors"} mt='20px'/>
+            <BarGraph title={"Top 5 negative factors"} mt='10px'/>
         </SimpleGrid>
-        {/*  <Storage*/}
-      {/*    gridArea={{ base: "2 / 1 / 3 / 2", lg: "1 / 2 / 2 / 3" }}*/}
-      {/*    used={25.6}*/}
-      {/*    total={50}*/}
-      {/*  />*/}
-      {/*  <Upload*/}
-      {/*    gridArea={{*/}
-      {/*      base: "3 / 1 / 4 / 2",*/}
-      {/*      lg: "1 / 3 / 2 / 4",*/}
-      {/*    }}*/}
-      {/*    minH={{ base: "auto", lg: "420px", "2xl": "365px" }}*/}
-      {/*    pe='20px'*/}
-      {/*    pb={{ base: "100px", lg: "20px" }}*/}
-      {/*  />*/}
-      {/*</Grid>*/}
-      {/*<Grid*/}
-      {/*  mb='20px'*/}
-      {/*  templateColumns={{*/}
-      {/*    base: "1fr",*/}
-      {/*    lg: "repeat(2, 1fr)",*/}
-      {/*    "2xl": "1.34fr 1.62fr 1fr",*/}
-      {/*  }}*/}
-      {/*  templateRows={{*/}
-      {/*    base: "1fr",*/}
-      {/*    lg: "repeat(2, 1fr)",*/}
-      {/*    "2xl": "1fr",*/}
-      {/*  }}*/}
-      {/*  gap={{ base: "20px", xl: "20px" }}>*/}
-      {/*  <Projects*/}
-      {/*    gridArea='1 / 2 / 2 / 2'*/}
-      {/*    banner={banner}*/}
-      {/*    avatar={avatar}*/}
-      {/*    name='Adela Parkson'*/}
-      {/*    job='Product Designer'*/}
-      {/*    posts='17'*/}
-      {/*    followers='9.7k'*/}
-      {/*    following='274'*/}
-      {/*  />*/}
-      {/*  <General*/}
-      {/*    gridArea={{ base: "2 / 1 / 3 / 2", lg: "1 / 2 / 2 / 3" }}*/}
-      {/*    minH='365px'*/}
-      {/*    pe='20px'*/}
-      {/*  />*/}
-      {/*  <Notifications*/}
-      {/*    used={25.6}*/}
-      {/*    total={50}*/}
-      {/*    gridArea={{*/}
-      {/*      base: "3 / 1 / 4 / 2",*/}
-      {/*      lg: "2 / 1 / 3 / 3",*/}
-      {/*      "2xl": "1 / 3 / 2 / 4",*/}
-      {/*    }}*/}
-      {/*  />*/}
     </Box>
   );
 }
