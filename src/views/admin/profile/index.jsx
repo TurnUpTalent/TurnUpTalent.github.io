@@ -66,8 +66,8 @@ export default function Profile(props) {
             </GridItem>
         </Grid>
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap='20px' >
-            <BarGraph title={"Top 5 positive factors"} chartData={chartDataPos} chartOptions={chartOptionsPos}  mt='20px'/>
-            <BarGraph title={"Top 5 negative factors"} chartData={chartDataNeg} chartOptions={chartOptionsNeg} mt='10px'/>
+            <BarGraph title={"Top 5 Positive Factors"} chartData={chartDataPos} chartOptions={chartOptionsPos}  mt='20px'/>
+            <BarGraph title={"Top 5 Negative Factors"} chartData={chartDataNeg} chartOptions={chartOptionsNeg} mt='10px'/>
         </SimpleGrid>
     </Box>
   );

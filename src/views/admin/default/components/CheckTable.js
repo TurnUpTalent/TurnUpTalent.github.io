@@ -12,7 +12,7 @@ import {
     Select, Link as ChakraLink,
 } from "@chakra-ui/react";
 import {Link as RouterLink} from "react-router-dom";
-import {useTable, useSortBy, useFilters, useExpanded, usePagination} from "react-table";
+import {useTable, useSortBy, useFilters, useExpanded, usePagination, useGlobalFilter} from "react-table";
 import Card from "components/card/Card";
 import {DefaultColumnFilter, Filter, SelectColumnFilter} from "./filters";
 import {Button, Col, Input, Row} from "reactstrap";
@@ -55,14 +55,29 @@ export default function CheckTable() {
           {
             Header: 'Department',
             accessor: 'department',
+            Cell: ({ row }) => (
+                <ChakraLink as={RouterLink} to={`/admin/profile/${row.original.id}`}>
+                  {row.original.department}
+                </ChakraLink>
+            )
           },
           {
             Header: 'Retention Score',
             accessor: 'retention_score',
+            Cell: ({ row }) => (
+                <ChakraLink as={RouterLink} to={`/admin/profile/${row.original.id}`}>
+                  {row.original.retention_score}
+                </ChakraLink>
+            )
           },
           {
             Header: 'Expected Exit',
             accessor: 'register_date',
+            Cell: ({ row }) => (
+                <ChakraLink as={RouterLink} to={`/admin/profile/${row.original.id}`}>
+                  {row.original.register_date}
+                </ChakraLink>
+            )
           },
           // Removed the 'more' column
         ],
@@ -70,48 +85,34 @@ export default function CheckTable() {
       );
     
 
-    const {
+      const {
         getTableProps,
         getTableBodyProps,
         headerGroups,
         page,
         prepareRow,
-        visibleColumns,
-        canPreviousPage,
-        canNextPage,
-        pageOptions,
-        pageCount,
-        gotoPage,
-        nextPage,
-        previousPage,
-        setPageSize,
-        state: { pageIndex, pageSize },
-    } = useTable(
+        setGlobalFilter, // Add this to destructure setGlobalFilter from table instance
+        state: { pageIndex, pageSize, globalFilter }, // Destructure globalFilter from state
+      } = useTable(
         {
-            columns,
-            data,
-            defaultColumn: { Filter: DefaultColumnFilter },
-            initialState: { pageIndex: 0, pageSize: 10 },
+          columns,
+          data,
+          initialState: { pageIndex: 0, pageSize: 10 },
         },
         useFilters,
+        useGlobalFilter, // Add this
         useSortBy,
         useExpanded,
         usePagination
-    );
+      );
 
+      const [filterInput, setFilterInput] = useState("");
 
-    const generateSortingIndicator = (column) => {
-        return column.isSorted ? (column.isSortedDesc ? ' 🔽' : ' 🔼') : '';
-    };
-
-    const onChangeInSelect = (event) => {
-        setPageSize(Number(event.target.value));
-    };
-
-    const onChangeInInput = (event) => {
-        const page = event.target.value ? Number(event.target.value) - 1 : 0;
-        gotoPage(page);
-    };
+      const handleFilterChange = (e) => {
+        const value = e.target.value || undefined;
+        setGlobalFilter(value);
+        setFilterInput(value);
+      };
 
 
   const textColor = useColorModeValue("secondaryGray.900", "white");
@@ -122,11 +123,18 @@ export default function CheckTable() {
 
     return (
         <Card direction="column" w="100%" px="0px" overflowX={{ sm: "scroll", lg: "hidden" }}>
-          <Flex px="25px" justify="space-between" align="center">
+          <Flex px="25px" justify="space-between" align="center" w="100%">
             <Text color={textColor} fontSize="22px" fontWeight="700" lineHeight="100%">
-              Employee Stats
+                Employee Stats
             </Text>
-          </Flex>
+            <Input
+                value={filterInput}
+                onChange={handleFilterChange}
+                placeholder="Search..."
+                style={{ width: '125px' }} // Use inline style as an alternative
+                ml="auto" // This pushes the input box to the right side
+            />
+         </Flex>
           <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
             <Thead>
               {headerGroups.map((headerGroup, index) => (
