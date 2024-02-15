@@ -5,20 +5,20 @@
     "name": "Ann Culhane",
     "job": "Chief Marketing Officer",
     "department": "Marketing",
-    "score": 58,
-    "register_date": "8/JAN/2024",
+    "retention_score": 58,
+    "register_date": "2 Years",
     "xaxis": {
-    "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
+      "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-       "name": "projected",
-       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
-     },
-       {
-         "name": "actual",
-         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
-       }
-     ],
+      "name": "Projected",
+      "data": [ 89, 73, 61, 47, 32, 19, 10,5,0]
+    },
+      {
+        "name": "Median",
+        "data": [ 96, 75, 65,55,54, 45,40,35,20 ]
+      }
+    ],
     "email": "ann.culhane@company.com",
     "chartDataPos": [400, 370, 330, 390, 320],
     "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
@@ -31,46 +31,45 @@
     "job": "People Operations Manager",
     "name": "Ahmad Rosser",
     "department": "People Operations",
-    "score": 37,
-    "register_date": "9/JAN/2024",
+    "retention_score": 37,
+    "register_date": "3 Years",
     "email": "ahmad.rosser@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
-      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
+      "name": "Projected",
+      "data": [ 89, 73, 61, 47, 32, 19, 10,5,0]
     },
       {
-        "name": "actual",
-        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
+        "name": "Median",
+        "data": [ 96, 75, 65,55,54, 45,40,35,20 ]
       }
     ],
-    "chartDataPos": [400, 370, 330, 390, 320],
-    "chartOptionsPos": ["Satisfaction", "Time off", "Co-Workers", "Insurance", "Travel"],
-    "chartDataNeg": [400, 370, 330, 390, 320],
-    "chartOptionsNeg": ["Over Time", "Bonus", "Job Market", "Growth", "Safety"]
+    "chartDataPos": [40, 32, 24, 12, 5],
+    "chartOptionsPos": ["Flex Time", "PTO", "Leadership Program", "Age", "Benefits"],
+    "chartDataNeg": [36, 24, 21, 15, 9],
+    "chartOptionsNeg": ["Salary", "Attendace", "Job Market", "Promotion", "Engagement"]
   },
-
   {
     "id": 3,
     "internal_id": 3,
     "job": "Sales Manager",
     "name": "Zain Calzoni",
     "department": "Sales",
-    "score": 39,
-    "register_date": "12/JAN/2024",
+    "retention_score": 39,
+    "register_date": "1 Year",
     "email": "zain.calzoni@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
-      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
+      "name": "Projected",
+      "data": [ 89, 73, 61, 47, 32, 19, 10,5,0]
     },
       {
-        "name": "actual",
-        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
+        "name": "Median",
+        "data": [ 96, 75, 65,55,54, 45,40,35,20 ]
       }
     ],
     "chartDataPos": [400, 370, 330, 390, 320],
@@ -84,19 +83,19 @@
     "job": "IT Manager",
     "name": "Leo Stanton",
     "department": "IT",
-    "score": 54,
-    "register_date": "13/JAN/2024",
+    "retention_score": 54,
+    "register_date": "2 Years",
     "email": "leo.stanton@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
-      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
+      "name": "Projected",
+      "data": [ 89, 73, 61, 47, 32, 19, 10,5,0]
     },
       {
-        "name": "actual",
-        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
+        "name": "Median",
+        "data": [ 96, 75, 65,55,54, 45,40,35,20 ]
       }
     ],
     "chartDataPos": [400, 370, 330, 390, 320],
@@ -110,19 +109,19 @@
     "job": "Finance Manager",
     "name": "Kaiya Vetrovs",
     "department": "Finance",
-    "score": 77,
-    "register_date": "14/JAN/2024",
+    "retention_score": 77,
+    "register_date": "3 Years",
     "email": "kaiya.vetrovs@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
-      "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
+      "name": "Projected",
+      "data": [ 89, 73, 61, 47, 32, 19, 10,5,0]
     },
       {
-        "name": "actual",
-        "data": [130, 96, 75, 65,55,54, 45,40,35 ]
+        "name": "Median",
+        "data": [ 96, 75, 65,55,54, 45,40,35,20 ]
       }
     ],
     "chartDataPos": [400, 370, 330, 390, 320],
@@ -136,18 +135,18 @@
     "job": "Accountant",
     "name": "Ryan Westervelt",
     "department": "Accounts",
-    "score": 39,
-    "register_date": "14/JAN/2024",
+    "retention_score": 39,
+    "register_date": "1 Year",
     "email": "ryan.westervelt@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -162,18 +161,18 @@
     "job": "Accountant",
     "name": "Corey Stanton",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "15/JAN/2024",
+    "retention_score": 74,
+    "register_date": "3 Years",
     "email": "corey.stanton@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -188,18 +187,18 @@
     "job": "Accountant",
     "name": "Mara Jones",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 85,
+    "register_date": "4 Years",
     "email": "mara.jones@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -214,18 +213,18 @@
     "job": "Accountant",
     "name": "Jamal Petersen",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 74,
+    "register_date": "3 Years",
     "email": "jamal.petersen@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -240,18 +239,18 @@
     "job": "Accountant",
     "name": "Khloe Allen",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 19,
+    "register_date": "6 Months",
     "email": "khloe.allen@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -266,18 +265,18 @@
     "job": "Accountant",
     "name": "Teagan Shields",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 9,
+    "register_date": "3 Months",
     "email": "teagan.shields@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -292,18 +291,18 @@
     "job": "Accountant",
     "name": "Solomon Hunter",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 59,
+    "register_date": "2 Years",
     "email": "solomon.hunter@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -318,18 +317,18 @@
     "job": "Accountant",
     "name": "Jayleen Davidson",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 42,
+    "register_date": "1 Year",
     "email": "jayleen.davidson@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -343,18 +342,18 @@
     "internal_id":  14,
     "name": "Adan Weber",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 50,
+    "register_date": "16 Months",
     "email": "adan.weber@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -369,18 +368,18 @@
     "job": "Accountant",
     "name": "Bowen Sharp",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 70,
+    "register_date": "3 Years",
     "email": "bowen.sharp@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -395,18 +394,18 @@
     "job": "Accountant",
     "name": "Ronin Harris",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 37,
+    "register_date": "8 Months",
     "email": "ronin.harris@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -421,18 +420,18 @@
     "job": "Accountant",
     "name": "Aiden McFarland",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 15,
+    "register_date": "3 Months",
     "email": "aiden.mcFarland@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -447,18 +446,18 @@
     "job": "Accountant",
     "name": "Kamari Mccarthy",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 55,
+    "register_date": "2 Years",
     "email": "kamari.mccarthy@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -473,18 +472,18 @@
     "job": "Accountant",
     "name": "Nelson Golden",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 79,
+    "register_date": "3 Years",
     "email": "nelson.golden@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],
@@ -499,18 +498,18 @@
     "job": "Accountant",
     "name": "Gabriella Gray",
     "department": "Accountant",
-    "score": 74,
-    "register_date": "1/JAN/2024",
+    "retention_score": 37,
+    "register_date": "2 Years",
     "email": "gabriella.gray@company.com",
     "xaxis": {
       "categories": [2021,2022,2023,2024,2025,2026,2027,2028,2029]
     },
     "series": [{
-      "name": "projected",
+      "name": "Projected",
       "data": [ 125, 91, 70, 60, 50, 49, 40,35,30]
     },
       {
-        "name": "actual",
+        "name": "median",
         "data": [130, 96, 75, 65,55,54, 45,40,35 ]
       }
     ],

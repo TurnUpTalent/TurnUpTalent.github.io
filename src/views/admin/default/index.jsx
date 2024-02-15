@@ -27,7 +27,7 @@ export default function UserReports() {
 
             <SimpleGrid columns={{base: 1, md: 2, xl: 2}} gap='20px' mb='20px'>
                 <PieCard title={'Categories of risk'}/>
-                <BarGraph title={'Retention score graph'}/>
+                <BarGraph title={'Retention Score Graph'}/>
             </SimpleGrid>
             <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck}/>
         </Box>

@@ -21,7 +21,7 @@ export default function Profile(props) {
     const name = tableDataCheck[id].name;
     const job = tableDataCheck[id].job;
     const department = tableDataCheck[id].department;
-    const score = tableDataCheck[id].score;
+    const retention_score = tableDataCheck[id].retention_score;
     const xaxis = tableDataCheck[id].xaxis;
     const series = tableDataCheck[id].series;
     const chartDataPos = tableDataCheck[id].chartDataPos;
@@ -52,7 +52,7 @@ export default function Profile(props) {
                     name= {name ? name : 'John Doe'}
                     job= {job ? job : 'Anonymous Job'}
                     department={department ? department : 'Anonymous Department'}
-                    score={score ? score : '0'}
+                    retention_score={retention_score ? retention_score : '0'}
                 />
             </GridItem>
             {/*</div>*/}

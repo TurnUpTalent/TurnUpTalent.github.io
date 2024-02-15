@@ -32,53 +32,43 @@ export default function CheckTable() {
 
     const columns = useMemo(
         () => [
-            {
-                Header: 'Employee ID',
-                accessor: 'id',
-            },
-            {
-                Header: 'Name',
-                accessor: 'name',
-            },
-            {
-                Header: 'Email',
-                accessor: 'email',
-            },
-            {
-                Header: 'Department',
-                accessor: 'department',
-            },
-            {
-                Header: 'Score',
-                accessor: 'score',
-            },
-            {
-                Header: 'Register Date',
-                accessor: 'register_date',
-            },
-            {
-                Header: 'more',
-                accessor: (values) => {
-                    const user_id = values.id;
-                    return user_id;
-                },
-                disableSortBy: true,
-                Cell: ({cell}) => {
-                    const {value} = cell;
-                    const url = '/admin/profile/' + value;
-                    return (
-                        <div style={{textAlign: 'center', fontSize: 18}}>
-
-                            <ChakraLink as={RouterLink} to={url} state={{ id: value }}>
-                                {'Click for more...'}
-                            </ChakraLink>
-                        </div>
-                    );
-                },
-            },
+          {
+            Header: 'Employee ID',
+            accessor: 'id',
+            // Create a new clickable Cell
+            Cell: ({ value }) => (
+              <ChakraLink as={RouterLink} to={`/admin/profile/${value}`}>
+                {value}
+              </ChakraLink>
+            )
+          },
+          {
+            Header: 'Name',
+            accessor: 'name',
+            // Create a new clickable Cell
+            Cell: ({ row }) => (
+              <ChakraLink as={RouterLink} to={`/admin/profile/${row.original.id}`}>
+                {row.original.name}
+              </ChakraLink>
+            )
+          },
+          {
+            Header: 'Department',
+            accessor: 'department',
+          },
+          {
+            Header: 'Retention Score',
+            accessor: 'retention_score',
+          },
+          {
+            Header: 'Expected Exit',
+            accessor: 'register_date',
+          },
+          // Removed the 'more' column
         ],
         []
-    );
+      );
+    
 
     const {
         getTableProps,
@@ -130,93 +120,55 @@ export default function CheckTable() {
 
     }
 
-  return (
-    <Card direction="column" w="100%" px="0px" overflowX={{ sm: "scroll", lg: "hidden" }}>
-      <Flex px="25px" justify="space-between" align="center">
-        <Text color={textColor} fontSize="22px" fontWeight="700" lineHeight="100%">
-          Employee Stats
-        </Text>
-      </Flex>
-        <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
-            <thead>
-            {headerGroups.map((headerGroup) => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map((column) => (
-                        <th {...column.getHeaderProps()}>
-                            <div {...column.getSortByToggleProps()}>
-                                {column.render('Header')}
-                                {generateSortingIndicator(column)}
-                            </div>
-                            <Filter column={column}/>
-                        </th>
-                    ))}
-                </tr>
-            ))}
-            </thead>
-            <tbody {...getTableBodyProps()}>
-            {page.map((row) => {
+    return (
+        <Card direction="column" w="100%" px="0px" overflowX={{ sm: "scroll", lg: "hidden" }}>
+          <Flex px="25px" justify="space-between" align="center">
+            <Text color={textColor} fontSize="22px" fontWeight="700" lineHeight="100%">
+              Employee Stats
+            </Text>
+          </Flex>
+          <Table {...getTableProps()} variant="simple" color="gray.500" mb="24px">
+            <Thead>
+              {headerGroups.map((headerGroup, index) => (
+                <Tr {...headerGroup.getHeaderGroupProps()} key={index}>
+                  {headerGroup.headers.map((column, index) => (
+                    <Th
+                      {...column.getHeaderProps(column.getSortByToggleProps())}
+                      key={index}
+                      borderColor={borderColor}
+                      // Align the header text to the center
+                      textAlign="center"
+                    >
+                      {column.render("Header")}
+                    </Th>
+                  ))}
+                </Tr>
+              ))}
+            </Thead>
+            <Tbody {...getTableBodyProps()}>
+              {page.map((row, index) => {
                 prepareRow(row);
                 return (
-                    <Fragment key={row.getRowProps().key}>
-                        <Tr>
-                            {row.cells.map((cell, index) => {
-                                return (
-                                    <Td {...cell.getCellProps()} key={index} fontSize={{ sm: "14px" }} minW={{ sm: "150px", md: "200px", lg: "auto" }} borderColor="transparent">
-                                        {cell.render("Cell")}
-                                    </Td>
-                                );
-                            })}
-                        </Tr>
-                    </Fragment>
-                );
-            })}
-            </tbody>
-        </Table>
-        <Row style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
-            {/*<Col md={3}>*/}
-                <Button
-                    color='primary'
-                    onClick={() => gotoPage(0)}
-                    disabled={!canPreviousPage}
-                >
-                    {'<<'}
-                </Button>
-                <Button
-                    color='primary'
-                    onClick={previousPage}
-                    disabled={!canPreviousPage}
-                >
-                    &nbsp;&nbsp;{'<'}&nbsp;&nbsp;
-                </Button>
-
-                Page{' '}
-                <strong>
-                    {pageIndex + 1} of {pageOptions.length}
-                </strong>
-                <Input
-                    type='select'
-                    value={pageSize}
-                    onChange={onChangeInSelect}
-                >
-                    >
-                    {[10, 20, 30, 40, 50].map((pageSize) => (
-                        <option key={pageSize} value={pageSize}>
-                            Show {pageSize}
-                        </option>
+                  <Tr {...row.getRowProps()} key={index}>
+                    {row.cells.map((cell, index) => (
+                      <Td
+                        {...cell.getCellProps()}
+                        key={index}
+                        fontSize={{ sm: "14px" }}
+                        minW={{ sm: "150px", md: "200px", lg: "auto" }}
+                        borderColor="transparent"
+                        // Align the table data to the center
+                        textAlign="center"
+                      >
+                        {cell.render("Cell")}
+                      </Td>
                     ))}
-                </Input>
-
-                <Button color='primary' onClick={nextPage} disabled={!canNextPage}>
-                    &nbsp;&nbsp;{'>'}&nbsp;&nbsp;
-                </Button>
-                <Button
-                    color='primary'
-                    onClick={() => gotoPage(pageCount - 1)}
-                    disabled={!canNextPage}
-                >
-                    {'>>'}
-                </Button>
-        </Row>
-    </Card>
-  );
+                  </Tr>
+                );
+              })}
+            </Tbody>
+          </Table>
+          {/* Pagination and other elements */}
+        </Card>
+      );
 }
