@@ -26,7 +26,7 @@ ReactDOM.render(
 									<Redirect to="/admin"/> )
 						}
 						/>
-						<Redirect from='/' to='/admin' />
+						<Redirect from='/' to='/admin/default' />
 					</Switch>
 				</BrowserRouter>
 			</ThemeEditorProvider>
