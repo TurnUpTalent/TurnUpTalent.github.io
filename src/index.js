@@ -20,6 +20,12 @@ ReactDOM.render(
 						<Route path="admin/profile/:id" element={<Profile authed={true}/>} />
 						<Route path={`/admin`} component={AdminLayout} />
 						<Route path={`/rtl`} component={RtlLayout} />
+						<Route
+							path="*"
+							render={() => (
+									<Redirect to="/admin"/> )
+						}
+						/>
 						<Redirect from='/' to='/admin' />
 					</Switch>
 				</BrowserRouter>
