@@ -6,7 +6,7 @@ import Navbar from 'components/navbar/NavbarAdmin.js';
 import Sidebar from 'components/sidebar/Sidebar.js';
 import { SidebarContext } from 'contexts/SidebarContext';
 import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import routes from 'routes.js';
 
 // Custom Chakra theme
@@ -140,7 +140,7 @@ export default function Dashboard(props) {
 							<Box mx='auto' p={{ base: '20px', md: '30px' }} pe='20px' minH='100vh' pt='50px'>
 								<Switch>
 									{getRoutes(routes)}
-									{/*<Redirect from='/' to='/admin/default' />*/}
+									<Redirect from='/' to='/admin/default' />
 								</Switch>
 							</Box>
 						) : null}
